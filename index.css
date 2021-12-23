@@ -1,0 +1,76 @@
+.nav-item{
+    color: white;
+}
+header .bg-image {
+    position: absolute;
+    background-image: url(images/minimalism-digital-art-simple-background-cats-eyes-hd-wallpaper-preview.jpg) ;
+    background-size: cover;
+    background-position: center;
+    height: 25rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+header h1{
+    text-align: center;
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+header p{
+    text-align: center;
+}
+
+.container{
+    padding: 20px;
+    
+}
+.card{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    margin-right: 200px;
+    height: 350px;
+}
+.btn{
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.paragraph{
+    width: 50%;
+    float: right;
+    padding: 20px;
+    margin-right: 200px;
+    height: 650px;
+    font-size: medium;
+    color: white;
+    border: 3px solid #fff;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+footer{
+    padding-top: 15rem;
+    color:#fff;
+    text-align: center;
+    
+}
+footer h4{
+    color:#fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+footer #icons{
+    padding-top: 35rem;
+}
+footer li{
+     list-style: none;
+}
+footer i{
+    color: #fff;
+    font-size: 3.2rem;
+}
