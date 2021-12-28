@@ -15,31 +15,8 @@
 </head>
 
 <body style="background-color:black">
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="main.html">GATO</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="profile.html">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="myServer.html">My Servers</a>
-        </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
     <div class="card" style="width: 18rem; margin-top: 4rem; margin-left:25rem; height: 500px;">
-      <img class="card-img-top" src="images/images (4).jfif" alt="Card image cap">
+      <img class="card-img-top" src="images/images%20(4).jfif" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Life?</h5>
         <p class="card-text">If Life were predictable it would cease to be life, and be without flavor</p>
@@ -61,11 +38,11 @@
         <li class="list-group-item">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
         <li class="list-group-item">254 subscribers <i class="fas fa-users"></i></li>
         <li class="list-group-item">Join <a href="game.html"><i class="fas fa-plus"
-              style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
+                                                                style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
       </ul>
     </div>
     <div class="card" style="width: 18rem; margin-top: 4rem; margin-left:25rem; height: 500px;">
-      <img class="card-img-top" src="images/indir (2).jfif" alt="Card image cap">
+      <img class="card-img-top" src="images/indir%20(2).jfif" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">AI and Education</h5>
         <p class="card-text">Can AI learn or does it just repeat?</p>
@@ -81,6 +58,18 @@
       <img class="card-img-top" src="images/sport-congresse.jpg" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">Sports</h5>
+        <tr>
+          <td><h4>User Name: </h4></td>
+          <td><h4 th:text="${user.username}"></h4></td>
+        </tr>
+        <tr>
+          <td><h4>Password: </h4></td>
+          <td><h4 th:text="${user.password}"></h4></td>
+        </tr>
+        <tr>
+          <td><h4>Email: </h4></td>
+          <td><h4 th:text="${user.email}"></h4></td>
+        </tr>
         <p class="card-text">Who wants to discuss any sports is welcome here.</p>
       </div>
       <ul class="list-group list-group-flush">
@@ -113,7 +102,7 @@
         <li class="list-group-item">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
         <li class="list-group-item">260 subscribers <i class="fas fa-users"></i></li>
         <li class="list-group-item">Join <a href="game.html"><i class="fas fa-plus"
-              style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
+                                                                style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
       </ul>
     </div>
   <footer style="margin-top: 15rem;">

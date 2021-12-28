@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 import java.util.Objects;
@@ -27,6 +28,7 @@ public class AppController {
     ServerRepository serverRepository;
     @Autowired
     UserRepository userRepository;
+
 
     @PostMapping(value = "/addServer")
     public ResponseEntity addServer(@RequestBody Server server){
@@ -43,29 +45,29 @@ public class AppController {
 
     // User
 
-    @PostMapping(value = "/registerUser")
-    public ResponseEntity registerUser(@RequestBody User user){
-        logger.info("Name:{} Password:{} Email:{}", user.getUsername(), user.getPassword(), user.getEmail());
-        if (userRepository.findByUsername(user.getUsername()).size()!=0 || userRepository.findByEmail(user.getEmail()).size()!=0){
-            return ResponseEntity.ok("EMAIL or USERNAME not valid");
-        }
-        else {
-            userRepository.save(user);
-            return ResponseEntity.ok(user);
-        }
-    }
-
-    @PostMapping(value = "/loginUser")
-    public ResponseEntity loginUser(@RequestBody User user){
-        logger.info("Name:{} Password:{}", user.getUsername(), user.getPassword());
-        if (userRepository.findByUsername(user.getUsername()).size()!=0 &&
-                Objects.equals(userRepository.findByUsername(user.getUsername()).get(0).getPassword(), user.getPassword())){
-            return ResponseEntity.ok(user);
-        }
-        else {
-            return ResponseEntity.ok("PASSWORD or USERNAME not valid");
-        }
-    }
+//    @PostMapping(value = "/registerUser")
+//    public ResponseEntity registerUser(@RequestBody User user){
+//        logger.info("Name:{} Password:{} Email:{}", user.getUsername(), user.getPassword(), user.getEmail());
+//        if (userRepository.findByUsername(user.getUsername()).size()!=0 || userRepository.findByEmail(user.getEmail()).size()!=0){
+//            return ResponseEntity.ok("EMAIL or USERNAME not valid");
+//        }
+//        else {
+//            userRepository.save(user);
+//            return ResponseEntity.ok(user);
+//        }
+//    }
+//
+//    @PostMapping(value = "/loginUser")
+//    public ResponseEntity loginUser(@RequestBody User user){
+//        logger.info("Name:{} Password:{}", user.getUsername(), user.getPassword());
+//        if (userRepository.findByUsername(user.getUsername()).size()!=0 &&
+//                Objects.equals(userRepository.findByUsername(user.getUsername()).get(0).getPassword(), user.getPassword())){
+//            return ResponseEntity.ok(user);
+//        }
+//        else {
+//            return ResponseEntity.ok("PASSWORD or USERNAME not valid");
+//        }
+//    }
 
     @GetMapping(value = "/getAllUsers")
     public ResponseEntity getAllUsers(){
