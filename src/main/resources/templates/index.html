@@ -16,74 +16,84 @@
 
 <body style="background-color:black">
 
-
-    <header>
-        <div class="bg-image"></div>
+    <header style = "margin-top: 20px;">
+        <div class="bg-image">
+            <img style = "margin-left: 800px; margin-top: 200px; position: absolute; background-size: cover; background-position: center; height: 25rem; width: 50%; opacity: 0.25; z-index: -1;" src="../static/images/background.jpg" alt="">
+        </div>
         <div class="content">
-            <h1 style="color: white;">GATO<i class="fas fa-cat"></i></h1>
-            <p style="color: white;">GATO is the name of the software, and it is a distributed social network that aims to provide privacy and
+            <h1 style="color: white; margin-left: 50px;">GATO<i class="fas fa-cat" style="margin-left: 20px;"></i></h1>
+            <p style="color: white; margin-top: 20px; text-align: center; font-size: 25px;">GATO is the name of the software, and it is a distributed social network that aims to provide privacy and
                 security for its users while preventing censorship. GATO, essentially, allows users to create public or
                 private rooms on their local machines that can be subscribed via other users. Subscribed users can share
                 photos, videos, and texts in these rooms while contents can be restricted by its administrator.</p>
         </div>
     </header>
-    <form action="registerUser" method="post">
+    <div class="regsiterForm" style="margin-top: 100px; font-size: 35px;">
+        <p style="margin-left: 250px; color:white">Register Form</p>
+    <form action="registerUser" method="post" style="margin-left:200px; height: 200px; font-size: 25px;">
+      <div style="color:white;">  
         <table>
             <tr>
-                <td><label for="username">User Name</label></td>
+                <td><label style="margin-right: 10px;" for="username">User Name</label></td>
                 <td><input type="text" name="username"></input></td>
             </tr>
             <tr>
-                <td><label for="email">Email</label></td>
-                <td><input type="text" name="email"></input></td>
+                <td ><label style="margin-top: 30px;" for="email">Email</label></td>
+                <td><input style="margin-top: 30px;" type="text" name="email"></input></td>
             </tr>
             <tr>
-                <td><label for="password">Password</label></td>
-                <td><input type="text" name="password"></input></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td><input type="submit" value="Submit"></input></td>
-            </tr>
-        </table>
-    </form>
-    <form action="loginUser" method="post">
-        <table>
-            <tr>
-                <td><label for="username">User Name</label></td>
-                <td><input type="text" name="username"></input></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password</label></td>
-                <td><input type="text" name="password"></input></td>
+                <td><label style="margin-top: 30px;"for="password">Password</label></td>
+                <td><input style="margin-top: 30px;" type="text" name="password"></input></td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Submit"></input></td>
+                <td><input style="margin-top: 30px; margin-left: 5px;" type="submit" value="Submit"></input></td>
             </tr>
         </table>
-    </form>
+     </div>
     </div>
-    <footer style="margin-top: 4rem;">
-        <div class="container clearfix">
-            <div class="col" id="icons">
-                <h4>GATO</h4>
-                <a href="#" target="blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#" target="blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" target="blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" target="blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
-
+    </form>
+    <div class="loginUser" style= "margin-top: 100px; font-size: 35px;">
+     <p style="margin-left: 250px; color:white">Login</p>
+     <form action="loginUser" method="post" style="margin-left:200px; height: 200px; font-size: 25px;">
+        <div style="color: white;">
+        <table>
+            <tr>
+                <td><label style="margin-right: 10px;" for="username">User Name</label></td>
+                <td><input type="text" name="username"></input></td>
+            </tr>
+            <tr>
+                <td><label style="margin-top: 30px;" for="password">Password</label></td>
+                <td><input style="margin-top: 30px;" type="text" name="password"></input></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input style="margin-top: 30px; margin-left: 5px;" type="submit" value="Submit"></input></td>
+            </tr>
+        </table>
+        </form>
+    </div>
+   
 </body>
-
+<footer style="margin-top: 4rem;">
+    <div class="container clearfix">
+        <div class="col" id="icons" style="display: inline-block; align-items: center;">
+            <h4 style="color: #dba617;">GATO</h4>
+            <div style="margin-left: 550px;">
+            <a href="#" target="blank" style="margin-right: 20px; color: #dba617;">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" target="blank" style="margin-right: 20px; color: #dba617;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="blank" style="margin-right: 20px; color: #dba617;">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="blank" style="margin-right: 20px; color: #dba617;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+        </div>
+    </div>
+</footer>
 </html>
