@@ -15,10 +15,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @RestController
@@ -89,13 +87,24 @@ public class AppController {
         return ResponseEntity.ok(serverRepository.findById(server).get().getStatus());
     }
 
-    //
+
     @PostMapping(value = "/addUserToServer")
     public ResponseEntity addUser(@RequestBody AddUserServerDTO dto){
         Optional<User> user = userRepository.findById(dto.getUserId());
         Optional<Server> server=serverRepository.findById(dto.getServerId());
         user.get().getServerList().add(server.get());
         server.get().getUserList().add(user.get());
+        userRepository.save(user.get());
+        serverRepository.save(server.get());
+        return ResponseEntity.ok(server.get());
+    }
+
+    @PostMapping(value = "/removeUserFromServer")
+    public ResponseEntity removeUser(@RequestBody AddUserServerDTO dto){
+        Optional<User> user = userRepository.findById(dto.getUserId());
+        Optional<Server> server=serverRepository.findById(dto.getServerId());
+        user.get().getServerList().remove(server.get());
+        server.get().getUserList().remove(user.get());
         userRepository.save(user.get());
         serverRepository.save(server.get());
         return ResponseEntity.ok(server.get());

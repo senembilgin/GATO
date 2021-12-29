@@ -29,5 +29,7 @@ public class Server {
     @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
         private List<User> userList=new ArrayList<>();
 
-
+    public Server(String name) {
+        this.name = name;
+    }
 }
