@@ -1,7 +1,3 @@
-/*TODO:
-    unsubscribe
-    user's servers ( list<server> )
-* */
 
 package com.gato.demo.controller;
 
