@@ -79,13 +79,6 @@ public class UserInterfaceController{
         return modelAndView;
     }
 
-    @GetMapping(value = "/serverPage/{serverID}")
-    public ModelAndView goServer(@ModelAttribute User user) {
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("user", new User());
-        modelAndView.setViewName("/{serverID}");
-        return modelAndView;
-    }
 
     @PostMapping("/addUserToGamer")
     public ModelAndView addUserToGamer() {

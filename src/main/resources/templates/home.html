@@ -14,7 +14,7 @@
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">GATO</a>
+    <a class="navbar-brand" th:href="@{/home}">GATO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,13 +22,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          <a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="profile.html">Profile</a>
+          <a class="nav-link" th:href="@{/profile}">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="myServer.html">My Servers</a>
+
+          <a class="nav-link" th:href="@{/myServer}">My Servers</a>
         </li>
       </ul>
     </div>
@@ -39,33 +40,35 @@
   <div class="cards"
     style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2rem; margin: .8rem 0 2.3rem width=100%">
     <div class="card" style="width: 270px;height: 500px; margin-left: 20rem; margin-top: 5rem;">
-      <img style="padding: 1rem;" src="../static/images/images (4).jfif" alt="Card image cap">
+      <img style="padding: 1rem;" src="/images/images (4).jfif" alt="Card image cap">
       <h5 style="padding: 1rem;"> Life?</h5>
       <p style="margin-left: 1rem;">If Life were predictable it would cease to be life, and be without flavor</p>
       <ul>
         <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color: green;"></i></li>
         <li style="list-style: none;">186 subscribers <i class="fas fa-users"></i></li>
-        <li style="list-style: none;">Join <a href="#"><i class="fas fa-plus"
-              style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
+        <form action="addUserToLife" method="post" >
+          <td><input type="submit" value="Submit"></input></td>
+        </form>
       </ul>
     </div>
     <div class="card" style="width: 270px; height: 500px; padding: 1rem; margin-left: 10rem; margin-top: 5rem; ">
-      <img src="../static/images/61z43L2eNDS._AC_SL1500_.jpg" alt="Card image cap">
+      <img src="/images/61z43L2eNDS._AC_SL1500_.jpg" alt="Card image cap">
       <br>
       <h5> Gamer or Faker</h5>
       <p>Do you really enjoy playing games or just want to be cooler?</p>
       <ul>
         <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
         <li style="list-style: none;">254 subscribers <i class="fas fa-users"></i></li>
-        <li style="list-style: none;">Join <a href="game.html"><i class="fas fa-plus"
-              style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
+        <form action="addUserToGamer" method="post" >
+          <td><input type="submit" value="Submit"></input></td>
+        </form>
       </ul>
     </div>
   </div>
   <div class="cards"
     style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2rem; margin: .8rem 0 2.3rem; width:100%;">
     <div class="card" style="width: 270px;height: 500px; margin-left: 20rem; margin-top: 5rem;">
-      <img style="padding: 1rem;" src="../static/images/indir (2).jfif" alt="Card image cap">
+      <img style="padding: 1rem;" src="/images/indir (2).jfif" alt="Card image cap">
       <h5 style="padding: 1rem;">AI and Education</h5>
       <p style="margin-left: 1rem;">Can AI learn or does it just imitate?</p>
       <ul>
@@ -76,7 +79,7 @@
       </ul>
     </div>
     <div class="card" style="width: 270px; height: 500px; padding: 1rem; margin-left: 10rem; margin-top: 5rem; ">
-      <img style="padding: 1rem;" src="../static/images/sport-congresse.jpg" alt="Card image cap">
+      <img style="padding: 1rem;" src="/images/sport-congresse.jpg" alt="Card image cap">
       <h5 style="padding: 1rem;">Sports</h5>
       <p style="margin-left: 1rem;">Who wants to discuss any sports is welcome here.</p>
       <ul>
@@ -90,7 +93,7 @@
   <div class="cards"
     style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2rem; margin: .8rem 0 2.3rem; width:100%;">
     <div class="card" style="width: 270px;height: 500px; margin-left: 20rem; margin-top: 5rem;">
-      <img style="padding: 1rem;" src="../static/images/RT_Bleu.Hero.Wide.jpg" alt="Card image cap">
+      <img style="padding: 1rem;" src="/images/RT_Bleu.Hero.Wide.jpg" alt="Card image cap">
       <h5 style="padding: 1rem;">Makeup Techniques</h5>
       <p style="margin-left: 1rem;">Just talking about makeup and skin care</p>
       <ul>
@@ -101,7 +104,7 @@
       </ul>
     </div>
     <div class="card" style="width: 270px; height: 500px; padding: 1rem; margin-left: 10rem; margin-top: 5rem; ">
-      <img style="padding: 1rem;" src="../static/images/1318106.jpg" alt="Card image cap">
+      <img style="padding: 1rem;" src="/images/1318106.jpg" alt="Card image cap">
       <h5 style="padding: 1rem;">Travelling</h5>
       <p style="margin-left: 1rem;">Hey guys! Let's chat here and advise each other places, restaurants, museums, etc...
       </p>
