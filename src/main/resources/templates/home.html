@@ -10,116 +10,124 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="index.css">
   <title>GATO</title>
 </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">GATO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="myServer.html">My Servers</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <body style="background-color:black">
-    <div class="card" style="width: 18rem; margin-top: 4rem; margin-left:25rem; height: 500px;">
-      <img class="card-img-top" src="images/images%20(4).jfif" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Life?</h5>
-        <p class="card-text">If Life were predictable it would cease to be life, and be without flavor</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Online <i class="fas fa-check-circle" style="color: green;"></i></li>
-        <li class="list-group-item">186 subscribers <i class="fas fa-users"></i></li>
-        <li class="list-group-item">Join <a href="#"><i class="fas fa-plus"
+  <div class="cards"
+    style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2rem; margin: .8rem 0 2.3rem width=100%">
+    <div class="card" style="width: 270px;height: 500px; margin-left: 20rem; margin-top: 5rem;">
+      <img style="padding: 1rem;" src="../static/images/images (4).jfif" alt="Card image cap">
+      <h5 style="padding: 1rem;"> Life?</h5>
+      <p style="margin-left: 1rem;">If Life were predictable it would cease to be life, and be without flavor</p>
+      <ul>
+        <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color: green;"></i></li>
+        <li style="list-style: none;">186 subscribers <i class="fas fa-users"></i></li>
+        <li style="list-style: none;">Join <a href="#"><i class="fas fa-plus"
               style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
       </ul>
     </div>
-    <div class="card" style="width: 18rem; margin-top: 4rem; height: 500px;">
-      <img class="card-img-top" src="images/61z43L2eNDS._AC_SL1500_.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Gamer or Faker</h5>
-        <p class="card-text">Do you really enjoy playing games or just want to be cooler?</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
-        <li class="list-group-item">254 subscribers <i class="fas fa-users"></i></li>
-        <li class="list-group-item">Join <a href="game.html"><i class="fas fa-plus"
-                                                                style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
-      </ul>
-    </div>
-    <div class="card" style="width: 18rem; margin-top: 4rem; margin-left:25rem; height: 500px;">
-      <img class="card-img-top" src="images/indir%20(2).jfif" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">AI and Education</h5>
-        <p class="card-text">Can AI learn or does it just repeat?</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
-        <li class="list-group-item">100 subscribers <i class="fas fa-users"></i></li>
-        <li class="list-group-item">Join <a href="#"><i class="fas fa-plus"
+    <div class="card" style="width: 270px; height: 500px; padding: 1rem; margin-left: 10rem; margin-top: 5rem; ">
+      <img src="../static/images/61z43L2eNDS._AC_SL1500_.jpg" alt="Card image cap">
+      <br>
+      <h5> Gamer or Faker</h5>
+      <p>Do you really enjoy playing games or just want to be cooler?</p>
+      <ul>
+        <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
+        <li style="list-style: none;">254 subscribers <i class="fas fa-users"></i></li>
+        <li style="list-style: none;">Join <a href="game.html"><i class="fas fa-plus"
               style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
       </ul>
     </div>
-    <div class="card" style="width: 18rem; margin-top: 4rem; height: 500px;">
-      <img class="card-img-top" src="images/sport-congresse.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Sports</h5>
-        <tr>
-          <td><h4>User Name: </h4></td>
-          <td><h4 th:text="${user.username}"></h4></td>
-        </tr>
-        <tr>
-          <td><h4>Password: </h4></td>
-          <td><h4 th:text="${user.password}"></h4></td>
-        </tr>
-        <tr>
-          <td><h4>Email: </h4></td>
-          <td><h4 th:text="${user.email}"></h4></td>
-        </tr>
-        <p class="card-text">Who wants to discuss any sports is welcome here.</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
-        <li class="list-group-item">325 subscribers <i class="fas fa-users"></i></li>
-        <li class="list-group-item">Join <a href="#"><i class="fas fa-plus"
+  </div>
+  <div class="cards"
+    style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2rem; margin: .8rem 0 2.3rem; width:100%;">
+    <div class="card" style="width: 270px;height: 500px; margin-left: 20rem; margin-top: 5rem;">
+      <img style="padding: 1rem;" src="../static/images/indir (2).jfif" alt="Card image cap">
+      <h5 style="padding: 1rem;">AI and Education</h5>
+      <p style="margin-left: 1rem;">Can AI learn or does it just imitate?</p>
+      <ul>
+        <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
+        <li style="list-style: none;">100 subscribers <i class="fas fa-users"></i></li>
+        <li style="list-style: none;">Join <a href="#"><i class="fas fa-plus"
               style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
       </ul>
     </div>
-    <div class="card" style="width: 18rem; margin-top: 4rem; margin-left:25rem; height: 500px;">
-      <img class="card-img-top" src="images/RT_Bleu.Hero.Wide.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Makeup Techniques</h5>
-        <p class="card-text">Just talking about makeup and skin care</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Online <i class="fas fa-check-circle" style="color: green;"></i></li>
-        <li class="list-group-item">218 subscribers <i class="fas fa-users"></i></li>
-        <li class="list-group-item">Join <a href="#"><i class="fas fa-plus"
+    <div class="card" style="width: 270px; height: 500px; padding: 1rem; margin-left: 10rem; margin-top: 5rem; ">
+      <img style="padding: 1rem;" src="../static/images/sport-congresse.jpg" alt="Card image cap">
+      <h5 style="padding: 1rem;">Sports</h5>
+      <p style="margin-left: 1rem;">Who wants to discuss any sports is welcome here.</p>
+      <ul>
+        <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
+        <li style="list-style: none;">325 subscribers <i class="fas fa-users"></i></li>
+        <li style="list-style: none;">Join <a href="#"><i class="fas fa-plus"
               style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
       </ul>
     </div>
-    <div class="card" style="width: 18rem; margin-top: 4rem; height: 500px;">
-      <img class="card-img-top" src="images/1318106.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Travelling</h5>
-        <p class="card-text">Hey guys! Let's chat here and advise each other places, restaurants, museums, etc...</p>
-      </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
-        <li class="list-group-item">260 subscribers <i class="fas fa-users"></i></li>
-        <li class="list-group-item">Join <a href="game.html"><i class="fas fa-plus"
-                                                                style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
+  </div>
+  <div class="cards"
+    style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2rem; margin: .8rem 0 2.3rem; width:100%;">
+    <div class="card" style="width: 270px;height: 500px; margin-left: 20rem; margin-top: 5rem;">
+      <img style="padding: 1rem;" src="../static/images/RT_Bleu.Hero.Wide.jpg" alt="Card image cap">
+      <h5 style="padding: 1rem;">Makeup Techniques</h5>
+      <p style="margin-left: 1rem;">Just talking about makeup and skin care</p>
+      <ul>
+        <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color: green;"></i></li>
+        <li style="list-style: none;">218 subscribers <i class="fas fa-users"></i></li>
+        <li style="list-style: none;">Join <a href="#"><i class="fas fa-plus"
+              style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
       </ul>
     </div>
-  <footer style="margin-top: 15rem;">
+    <div class="card" style="width: 270px; height: 500px; padding: 1rem; margin-left: 10rem; margin-top: 5rem; ">
+      <img style="padding: 1rem;" src="../static/images/1318106.jpg" alt="Card image cap">
+      <h5 style="padding: 1rem;">Travelling</h5>
+      <p style="margin-left: 1rem;">Hey guys! Let's chat here and advise each other places, restaurants, museums, etc...
+      </p>
+      <ul>
+        <li style="list-style: none;">Online <i class="fas fa-check-circle" style="color:green;"></i></li>
+        <li style="list-style: none;">260 subscribers <i class="fas fa-users"></i></li>
+        <li style="list-style: none;">Join <a href="game.html"><i class="fas fa-plus"
+              style="color: black; font-size: small; margin-left: 8rem; margin-top: 0rem;"></a></i></li>
+      </ul>
+    </div>
+  </div>
+  <footer style="margin-top: 15rem; text-align: center;">
     <div class="container clearfix">
       <div class="col" id="icons">
-        <h4>GATO</h4>
+        <h4 style="color: #dba617;">GATO</h4>
         <a href="#" target="blank">
-          <i class="fab fa-linkedin"></i>
+          <i style="color: white; font-size: 32px;" class="fab fa-linkedin"></i>
         </a>
         <a href="#" target="blank">
-          <i class="fab fa-instagram"></i>
+          <i style="color: white; font-size: 32px;" class="fab fa-instagram"></i>
         </a>
         <a href="#" target="blank">
-          <i class="fab fa-twitter"></i>
+          <i style="color:white; font-size: 32px;" class="fab fa-twitter"></i>
         </a>
         <a href="#" target="blank">
-          <i class="fab fa-facebook-f"></i>
+          <i style="color: white; font-size: 32px;" class="fab fa-facebook-f"></i>
         </a>
       </div>
     </div>
